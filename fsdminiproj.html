@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hospital Appointment System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Appointment System</h1>
+        <form id="appointmentForm">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" required>
+            <br>
+            <br>
+
+            <label for="department">Select Department:</label>
+            select id="department" required>
+                <option value="cardiology">Cardiology</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="neurology">Neurology</option>
+                <!-- Add more departments as needed -->
+            </select>
+            <br>
+            <br>
+
+            <label for="problem">Describe the Problem:</label>
+            <textarea id="problem" required></textarea>
+            <br>
+            <br>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="button" onclick="bookAppointment()">Book Appointment</button>
+        </form>
+
+        <div id="appointments">
+            <!-- Display booked appointments here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

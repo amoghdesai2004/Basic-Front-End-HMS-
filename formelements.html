@@ -1,0 +1,22 @@
+
+    <body>
+        <script>
+            function validateEmail(email){
+                const re=/\S+@\S+\.\S+/g;
+
+                let result=re.test(email);
+                if(result){
+                    console.log("the email is valid");
+                }
+                else{
+                    let newEmail=prompt("enter a valid email:");
+                    validateEmail(newEmail);
+                }
+            }
+            let email=prompt("enter an email");
+            validateEmailamo(email);
+        
+        </script>
+
+    </body>
+</html>
